@@ -259,9 +259,19 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 
-/* -- Standings Table ------------------------------------------------------ */
+/* -- Custom Tables ------------------------------------------------------ */
+@media (min-width: 1200px) {
+    .table-container { grid-template-columns: repeat(2, 1fr); }
+}
+
 .table-container {
     overflow-x: auto;
+}
+
+.pub-container {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 table {
@@ -270,7 +280,7 @@ table {
     width: 100%;
 }
 
-    table td, #standings-table th {
+    table td, th {
         padding: 8px;
     }
 
