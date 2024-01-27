@@ -5,18 +5,18 @@
 // const q2 = 'tqx=out:json';
 var q3 = 'sheet=GameMasterSheet';
 var publishers = [
-    "Anthony",
+    "Number Go Up Games",
     "Brendan",
     "Chris",
-    "James",
-    "Kyle",
-    "Louisa",
+    "I Heart Nishiki Games",
+    "Kyle Does What Nintendont",
+    "DS Games for Girls",
     "Matt",
     "Vanessa"
 ]
 
 for (let i=0; i < publishers.length; i++) {
-    var query1 = `select E,F,P,Q,R where C contains '${publishers[i]}'`;
+    var query1 = `select E,F,P,Q,R where D contains '${publishers[i]}'`;
     var q4 = encodeURIComponent(query1);
     var url1 = `${url}${ssid}${q1}&${q2}&${q3}&tq=${q4}`;
     
