@@ -4,15 +4,14 @@ const url = 'https://docs.google.com/spreadsheets/d/';
 const ssid = '1pDaqRMLZTKkLolbQIobl3hOkRWbe8-5Yo7WsXKa4wQc';
 const q1 = '/gviz/tq?';
 const q2 = 'tqx=out:json';
-const q3 = 'sheet=Standings';
+var q3 = 'sheet=Standings';
 
-const url1 = `${url}${ssid}${q1}&${q2}&${q3}`;
+var url1 = `${url}${ssid}${q1}&${q2}&${q3}`;
 console.log(url1);
 //output.textContent = endpoint1;
 fetch(url1).then(res => res.text()).then(data => {
     const temp = data.substr(47).slice(0,-2);
     const json = JSON.parse(temp);
-    console.log(json);
     let text = doHeaderRow(json);
     const rows = json.table.rows;
     rows.forEach(row => {
