@@ -6,7 +6,8 @@ var s_arr = [
     "It's pronounced 'suh-WATCH'!",
     "Also try Immaculate Panel!",
     "Also try Byte!",
-    "Let's go Mets!"
+    "Let's go Mets!",
+    "Hi, Kyle!"
 ];
 
 class Subtitle extends HTMLElement {
