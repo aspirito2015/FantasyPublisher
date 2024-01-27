@@ -24,21 +24,22 @@ fetch(url1).then(res => res.text()).then(data => {
 function doHeaderRow(json) {
     let text = '<tr>';
     const cols = json.table.cols;
-    cols.forEach(col => {
-        const temp1 = col.label;
-        text += "<th>" + col.label + "</th>";
-    });
+    text += `<th class="freeze-col-1">${cols[0].label}</th>`;
+    for (let i = 1; i < cols.length; i++) {
+        text += "<th>" + cols[i].label + "</th>";
+    }
     text += '</tr>';
     return text;
 }
 
 function doBodyRow(row) {
     let text = '<tr>';
-    row.forEach(cell => {
-        let value = cell.v;
+    text += `<th class="freeze-col-1 row-heading">${row[0].v}</th>`;
+    for (let i = 1; i < row.length; i++) {
+        let value = row[i].v;
         if(isNumber(value)) value = Math.round(value * 100) / 100;
-        text += "<td>" + value + "</td>";
-    })
+        text += `<td>${value}</td>`;
+    }
     text += '</tr>';
     return text;
 }
