@@ -16,7 +16,7 @@ class Menu extends HTMLElement {
 
                     <ul class="pure-menu-list">
                         <li class="pure-menu-item"><a href="#standings" class="pure-menu-link">Standings</a></li>
-                        <li class="pure-menu-item"><a href="#publishers" class="pure-menu-link">Publishers (WIP)</a></li>
+                        <li class="pure-menu-item"><a href="#publishers" class="pure-menu-link">Publishers</a></li>
                         <li class="pure-menu-item"><a href="#games" class="pure-menu-link">Games (WIP)</a></li>
                     </ul>
                 </div>
