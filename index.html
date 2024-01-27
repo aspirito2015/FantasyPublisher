@@ -29,7 +29,50 @@
         <div class="output"></div>
         <div class="content">
             <h2 class="content-subhead" id="standings">Standings</h2>
-            <table id="standings-table"><tr><th>Loading Standings...</th></tr></table>
+            <p>A publisher's PS (Publisher Score) is the sum of the GSVs (Game Score Values) of all games on that publisher's roster. The following formulas are used to calculate GSV, where 
+                <math>
+                    <mrow>
+                        <mi>OC</mi>
+                        <mo>=</mo>
+                        <mtext>OpenCritic's <i>Top Critic Average</i></mtext>
+                    </mrow>
+                </math> and 
+                <math>
+                    <mrow>
+                        <mi>RC+</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mtext>Review Count</mtext>
+                            <mtext>Avg Review Count</mtext>
+                        </mfrac>
+                    </mrow>
+                </math>: 
+            </p>
+            <p>
+                <math display="block">
+                    <mrow>
+                        <mi>GSV</mi>
+                        <mo>=</mo>
+                        <mi>OC</mi>
+                        <mo>*</mo>
+                        <mo>(</mo>
+                        <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mfrac>
+                                <mi>RC+</mi>
+                                <mn>100</mn>
+                            </mfrac>
+                        </mrow>
+                        <mo>)</mo>
+                        <mo>+</mo>
+                        <mi>RC+</mi>
+                    </mrow>
+                </math>
+            </p>
+            <div class="table-container">
+                <table id="standings-table"><tr><th>Loading Standings...</th></tr></table>
+            </div>
             <h2 class="content-subhead" id="publishers">Publishers</h2>
             <lorem-component></lorem-component><lorem-component></lorem-component>
             <h2 class="content-subhead" id="games">Games</h2>
