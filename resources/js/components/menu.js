@@ -15,9 +15,10 @@ class Menu extends HTMLElement {
                     <a class="pure-menu-heading" href="#main">Fantasy Publisher</a>
 
                     <ul class="pure-menu-list">
-                        <li class="pure-menu-item"><a href="#standings" class="pure-menu-link">Standings</a></li>
-                        <li class="pure-menu-item"><a href="#publishers" class="pure-menu-link">Publishers</a></li>
-                        <li class="pure-menu-item"><a href="#games" class="pure-menu-link">Games (WIP)</a></li>
+                        <li class="pure-menu-item"><a href="index.html#standings" class="pure-menu-link">&ensp;Standings</a></li>
+                        <li class="pure-menu-item"><a href="index.html#publishers" class="pure-menu-link">&ensp;Publishers</a></li>
+                        <li class="pure-menu-item"><a href="index.html#games" class="pure-menu-link">&ensp;Games (WIP)</a></li>
+                        <li class="pure-menu-item"><a href="calendar.html" class="pure-menu-link">Calendar</a></li>
                     </ul>
                 </div>
             </div>
