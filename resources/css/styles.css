@@ -1,13 +1,3 @@
-:root {
-    --text: #ebe9fc;
-    --background: #131318;
-    --background-light: #282830;
-    --background-lighter: #32323b;
-    --primary: #8f5fff;
-    --secondary: #5C48C2;
-    --accent: #068c21;
-}
-
 body {
     color: var(--text);
     background: var(--background);
@@ -307,7 +297,7 @@ table {
         background-color: var(--secondary);
     }
 
-
+/* -- Misc --------------------------------------------------------------- */
 #subtitle {
     rotate: -10deg;
     position: relative;
@@ -317,7 +307,6 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 mrow {
     background-color: var(--background-lighter);
