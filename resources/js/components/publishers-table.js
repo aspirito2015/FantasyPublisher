@@ -52,11 +52,11 @@ function doBodyRow(row) {
     let text = '<tr>';
     for (let i = 0; i < row.length; i++) {
         if (!row[i]) {
-            text += `<td></td>`;
+            text += `<td>-</td>`;
             continue;
         }
         let value = row[i].v;
-        //console.log(`${value}: ${typeof value}`);
+        // Replace "Date(YYYY,MM,DD)" with "M/D"
         if(typeof value === "string") {
             if (value.includes("Date")) {
                 console.log(value);
@@ -69,6 +69,7 @@ function doBodyRow(row) {
                 console.log(value);
             }
         }
+        // Round numbers to hundredths
         if(isNumber(value)) value = Math.round(value * 100) / 100;
         text += `<td>${value}</td>`;
     }
