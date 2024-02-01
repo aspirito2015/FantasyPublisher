@@ -11,8 +11,8 @@ var publishers = [
     "I Heart Nishiki Games",
     "Kyle Does What Nintendont",
     "DS Games for Girls",
-    "Matt",
-    "Vanessa"
+    "Turning Turbines",
+    "Demons Inc."
 ]
 
 for (let i=0; i < publishers.length; i++) {
