@@ -12,7 +12,7 @@ class Menu extends HTMLElement {
             </a>
             <div id="menu">
                 <div class="pure-menu">
-                    <a class="pure-menu-heading" href="#main">Fantasy Publisher</a>
+                    <a class="pure-menu-heading" href="index.html#main">Fantasy Publisher</a>
 
                     <ul class="pure-menu-list">
                         <li class="pure-menu-item"><a href="index.html#standings" class="pure-menu-link">&ensp;Standings</a></li>
